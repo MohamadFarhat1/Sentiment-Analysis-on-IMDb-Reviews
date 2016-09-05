@@ -11,13 +11,12 @@ The dataset can be found here: http://ai.stanford.edu/~amaas/data/sentiment/
 
 I tried a simple Logistic Regression classifier, which usually works quite well with Doc2Vec vectors. 
 
-A lambda search for an elastic-net mixing parameter of 0.5 yielded an optimal value of 2e-4.
+(A lambda search for an elastic-net mixing parameter of 0.5 yielded an optimal value of 2e-4.)
 
-
-
+![Logistic Regression Model](https://github.com/sgrvinod/Sentiment-Analysis-on-IMDb-Reviews/blob/master/logmodel.png?raw=true)
 
 Using a more complex classifier (such as a neural-net) yields only a very small increase in AUC; small enough that it's often not worth the trouble. 
 
 A 3 hidden layer x 100 neuron NN  with Rectifier Activation with Dropout (dropout ratio=0.5) only did slightly better:
 
-
+![Deep Learning Model](https://github.com/sgrvinod/Sentiment-Analysis-on-IMDb-Reviews/blob/master/dlmodel.png?raw=true)
